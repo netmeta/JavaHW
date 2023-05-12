@@ -37,7 +37,7 @@ public class Task2 {
     };
     
     public static void run() {
-        Map<String, Integer> frequency = list.stream().collect(Collectors.toMap(e -> e, e -> 1, Integer::sum));
+        Map<String, Integer> frequency = list.stream().collect(Collectors.toMap(e -> e, e -> 2, Integer::sum));
         frequency.forEach((k, v) -> System.out.println(k + ": " + v));
 
     }
